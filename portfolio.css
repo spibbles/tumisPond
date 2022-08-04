@@ -1,0 +1,47 @@
+
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+margin: 0;
+padding: 0;
+text-align: center;
+
+width: 100%
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+cursor: pointer;
+transition-duration:0.3s;
+
+background-image: linear-gradient(rgba(52, 78, 65, 0.4),rgba(52, 78, 65, 0.4)), url("assets/sanctuary.jpg");
+background-color: #e8f4ea;
+background-repeat: no-repeat;
+background-attachment: fixed;
+background-size: cover;
+}
+
+/*style header and it's items*/
+header{
+  display:flex;
+  justify-content:center;
+  flex-wrap: wrap;
+  align-items: center;
+  padding:5%;
+  cursor: pointer;
+  transition-duration:0.3s;
+  
+}
+
+#welcome{
+  flex-grow: 2;
+  width : 100rem; 
+  background-color:#7f9930;
+  margin-top:3em;
+  padding:2%;
+  border-radius: 15px;
+  
+}
+
+
+#cc{
