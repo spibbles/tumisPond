@@ -25,6 +25,7 @@ background-size: cover;
 header{
   display:flex;
   justify-content:center;
+  height: min-content;
   flex-wrap: wrap;
   align-items: center;
   padding:5%;
@@ -46,17 +47,22 @@ header{
 
 .item{
   display:flex;
-  justify-content:center;
+  flex-direction:column;
   flex-wrap: wrap;
+  justify-content:center;
   align-items: center;
+
   padding:5%;
+  padding-top:2%;
 
   max-width:60vw;
-  height: 60vw;
+  width:60%;
+  height: min-content;
   border-radius: 5%;
   border-width:15px;
   background-color:#7f9930;
-  margin: 0.5em; 
+  margin: 3em; 
+  margin-top:0;
   object-fit: cover;
 }
 
@@ -181,4 +187,53 @@ button:hover{
   background-color:#BFCB92;
   border-color:  #454839;
   color:  #454839;
+}
+
+@media  (max-width: 1280px) {
+
+  
+  header {
+    padding-top:10%
+    width: 100%;
+  }
+  #welcome{
+    
+  }
+  #intro{
+    width:100%;
+  }
+  
+  *{
+    width:100%;
+  }
+
+  .container{
+    width:90%;
+    padding:3em;
+  }
+  
+  main{
+    width:90%
+  }
+
+  nav{
+    padding:0
+  }
+
+  button{
+    font-family:'Quicksand',sans-serif;
+  
+    font-size:1em;
+    
+    text-align: center;
+  
+    cursor: pointer;
+    transition-duration:0.2s;
+  
+    padding:1em;
+    width:max-content;
+  
+    
+  }
+  
 }
